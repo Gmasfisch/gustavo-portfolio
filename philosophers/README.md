@@ -22,7 +22,7 @@ This project helped me develop a deeper understanding of concurrency control, ti
 
 ## Folder Structure
 
-philosophers/
+philosophers/  
 │
 ├── philosophers/          # Mandatory version (threads + mutexes)
 │   ├── Makefile  
