@@ -28,7 +28,7 @@ philosophers/
 │   ├── Makefile  
 │   ├── src/  
 │   ├── includes/  
-│   └── ...  
+│   └── ...
 │
 └── philosophers_bonus/    # Bonus version (processes + semaphores)
     ├── Makefile  
