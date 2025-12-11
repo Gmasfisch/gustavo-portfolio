@@ -68,18 +68,17 @@ while ((line = get_next_line(fd)) != NULL)
 }
 close(fd);
 ```
-# Compile Example  
+## Compile Example  
 gcc -Wall -Wextra -Werror \
     get_next_line.c get_next_line_utils.c \
     main.c  
 
-# Bonus Version
+## Bonus Version
 gcc -Wall -Wextra -Werror \
     get_next_line_bonus.c get_next_line_utils_bonus.c \
     main.c  
 
 ## Learning Outcomes
-Learning Outcomes
 
 - Handling persistent state with static variables  
 - Efficient buffer and string manipulation  
