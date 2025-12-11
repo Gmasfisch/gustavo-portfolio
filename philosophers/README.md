@@ -24,16 +24,16 @@ This project helped me develop a deeper understanding of concurrency control, ti
 
 philosophers/  
 │
-├── philosophers/ # Mandatory version (threads)  
-│ ├── Makefile  
-│ ├── src/  
-│ ├── includes/  
+├── philosophers/ # Mandatory version (threads)
+│ ├── Makefile
+│ ├── src/
+│ ├── includes/
 │ └── ...
 │
-└── philosophers_bonus/ # Bonus version (processes)  
-├── Makefile  
-├── src/  
-├── includes/  
+└── philosophers_bonus/ # Bonus version (processes)
+├── Makefile
+├── src/
+├── includes/
 └── ...
 
 Each folder is compiled **separately**, and each produces its own executable.  
