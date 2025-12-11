@@ -100,5 +100,5 @@ Project Status
 Author / Contact
 
 Gustavo — 42 Berlin (rank 04)
-**GitHub:** [Gmasfisch](https://github.com/Gmasfisch)  
+**GitHub Portfolio:** [Gustavo Fischbach](https://github.com/Gmasfisch/gustavo-portfolio)  
 **Email:** fischbachgustavo@gmail.com
