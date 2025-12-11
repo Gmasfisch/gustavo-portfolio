@@ -17,7 +17,7 @@ This project strengthened my understanding of buffer management, memory allocati
 ## Key Features
 
 - Reads one complete line per function call  
--- Works with:  
+- Works with:  
 - Regular files  
 - Standard input  
 - Pipes and other file descriptors  
