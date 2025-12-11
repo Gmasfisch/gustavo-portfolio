@@ -9,7 +9,7 @@ A minimal UNIX shell implemented as part of the 42 Berlin curriculum.
 Minishell is a compact, POSIX-compatible shell implemented in C. It supports executing commands, pipes, redirections, environment variables, and built-in commands.  
 This project helped me master process creation, command parsing, memory management, and signal handling.  
 
-**Course:** 42 Berlin — 2024 (Rank 04)
+**Course:** 42 Berlin — 2025 (Rank 03)
 
 ---
 
