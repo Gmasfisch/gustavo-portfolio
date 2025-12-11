@@ -16,27 +16,27 @@ The project is divided into **two separate folders**, each with its own Makefile
 The Dining Philosophers problem illustrates common challenges in concurrent programming, such as deadlock, starvation, and resource-sharing.  
 This project helped me develop a deeper understanding of concurrency control, timing accuracy, and safe inter-thread and inter-process communication.
 
-**Course:** 42 Berlin — 2025 (Rank 03)
+**Course:** 42 Berlin — 2025 (Rank 03)  
 
 ---
 
-## Folder Structure  
+## Folder Structure
 
-philosophers/
+philosophers/  
 │
-├── philosophers/ # Mandatory version (threads)
-│ ├── Makefile
-│ ├── src/
-│ ├── includes/
+├── philosophers/ # Mandatory version (threads)  
+│ ├── Makefile  
+│ ├── src/  
+│ ├── includes/  
 │ └── ...
 │
-└── philosophers_bonus/ # Bonus version (processes)
-├── Makefile
-├── src/
-├── includes/
+└── philosophers_bonus/ # Bonus version (processes)  
+├── Makefile  
+├── src/  
+├── includes/  
 └── ...
 
-Each folder is compiled **separately**, and each produces its own executable.
+Each folder is compiled **separately**, and each produces its own executable.  
 
 ---
 
