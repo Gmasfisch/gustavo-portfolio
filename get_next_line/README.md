@@ -10,7 +10,7 @@ get_next_line is a function that reads from a file descriptor one line at a time
 
 This project strengthened my understanding of buffer management, memory allocation, static variables, and efficient file I/O.  
 
-**Course:** 42 Berlin — 2024 (Rank 01)  
+**Course:** 42 Berlin — 2025 (Rank 01)  
 
 ---
 
