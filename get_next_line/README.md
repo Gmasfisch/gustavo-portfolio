@@ -17,21 +17,13 @@ This project strengthened my understanding of buffer management, memory allocati
 ## Key Features
 
 - Reads one complete line per function call  
-
-- Works with:  
-
+-- Works with:  
 - Regular files  
-
 - Standard input  
-
 - Pipes and other file descriptors  
-
 - Handles arbitrarily long lines  
-
 - Efficient buffered reading  
-
 - No memory leaks  
-
 - Fully C-standard compliant   
 
 ### Bonus Features
@@ -39,17 +31,11 @@ This project strengthened my understanding of buffer management, memory allocati
 ✔ Multiple File Descriptor Support
 
 - The bonus version supports up to 4096 file descriptors at the same time.
-
 - Each FD keeps its own internal buffer using a static array
-
 - Reading from different files never interferes
-
 - Perfect for parallel file reads
-
 ✔ Improved Internal Buffer Handling
-
 - Same interface as mandatory
-
 - Safely handles leftover data across calls 
 
 ---
