@@ -33,10 +33,9 @@ This project strengthened my understanding of buffer management, memory allocati
 - The bonus version supports up to 4096 file descriptors at the same time.
 - Each FD keeps its own internal buffer using a static array
 - Reading from different files never interferes
-- Perfect for parallel file reads
-✔ Improved Internal Buffer Handling
-- Same interface as mandatory
-- Safely handles leftover data across calls 
+- Perfect for parallel file reads  
+- Same interface as mandatory  
+- Safely handles leftover data across calls  
 
 ---
 
