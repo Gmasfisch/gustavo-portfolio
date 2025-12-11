@@ -99,5 +99,5 @@ Author / Contact
 
 Gustavo Fischbach — 42 Berlin (rank 04)  
 **GitHub Portfolio:** [Portfolio](https://github.com/Gmasfisch/gustavo-portfolio)  
-**GitHub Profile:** [Profile](https://github.com/Gmasfisch)
+**GitHub Profile:** [Profile](https://github.com/Gmasfisch)  
 **Email:** fischbachgustavo@gmail.com
