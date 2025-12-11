@@ -18,9 +18,9 @@ This project strengthened my understanding of buffer management, memory allocati
 
 - Reads one complete line per function call  
 - Works with:  
-- Regular files  
-- Standard input  
-- Pipes and other file descriptors  
+  - Regular files  
+  - Standard input  
+  - Pipes and other file descriptors  
 - Handles arbitrarily long lines  
 - Efficient buffered reading  
 - No memory leaks  
