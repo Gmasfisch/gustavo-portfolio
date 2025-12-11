@@ -21,7 +21,10 @@ int	main(int argc, char **argv, char **envp)
 	pipex = init_pipex(argc, argv, envp);
 	if (!pipex)
 		return (EXIT_FAILURE);
-	here_doc_mode(pipex, argv, argc);
+	if (ft_strncmp(argv[1], "here_doc", 9) == 0)
+		here_doc_mode(pipex, argv, argc);
+	else
+		normal_mode(pipex, argv, argc);
 	execute_pipeline(pipex);
 	free_pipex(pipex);
 	return (EXIT_SUCCESS);

@@ -77,7 +77,6 @@ static int	handle_quote(const char *s, int *i, char quote)
 {
 	if (s[*i] != quote)
 		return (0);
-	aw
 	while (s[*i] && s[*i] != quote)
 		(*i)++;
 	if (s[*i] == quote)

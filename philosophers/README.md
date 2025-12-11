@@ -6,8 +6,8 @@ This project explores concurrency, synchronization, thread management, and proce
 
 The project is divided into **two separate folders**, each with its own Makefile:
 
-- `philo/` — Mandatory version (threads + mutexes)
-- `philo_bonus/` — Bonus version (processes + semaphores)
+- `philosophers/` — Mandatory version (threads + mutexes)
+- `philosophers_bonus/` — Bonus version (processes + semaphores)
 
 ---
 

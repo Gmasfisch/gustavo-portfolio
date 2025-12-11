@@ -1,0 +1,19 @@
+total 108
+-rw-rw-r-- 1 gmasfisch gmasfisch  1618 Jun 19 14:13 execute.c
+-rw-rw-r-- 1 gmasfisch gmasfisch    21 Dec 11 14:46 input.txt
+drwxrwxr-x 2 gmasfisch gmasfisch  4096 Dec 11 14:42 Libft
+-rw-rw-r-- 1 gmasfisch gmasfisch  1197 Aug  5 09:55 main_bonus.c
+-rw-rw-r-- 1 gmasfisch gmasfisch  1189 Jun 19 14:13 main.c
+-rw-rw-r-- 1 gmasfisch gmasfisch   852 Jun 19 14:13 Makefile
+drwxrwxr-x 2 gmasfisch gmasfisch  4096 Dec 11 14:44 obj
+-rw-rw-r-- 1 gmasfisch gmasfisch     0 Dec 11 14:43 output.txt
+-rw-rw-r-- 1 gmasfisch gmasfisch  2509 Dec 11 14:42 parser.c
+-rw-rw-r-- 1 gmasfisch gmasfisch  2118 Jun 19 14:13 path.c
+-rwxrwxr-x 1 gmasfisch gmasfisch 22032 Dec 11 14:44 pipex
+-rwxrwxr-x 1 gmasfisch gmasfisch 22720 Dec 11 14:42 pipex_bonus
+-rw-rw-r-- 1 gmasfisch gmasfisch  1791 Aug  5 09:55 pipex_bonus.c
+-rw-rw-r-- 1 gmasfisch gmasfisch  1085 Aug  5 09:55 pipex_bonus.h
+-rw-rw-r-- 1 gmasfisch gmasfisch  2974 Aug  5 09:55 pipex.c
+-rw-rw-r-- 1 gmasfisch gmasfisch  2194 Aug  5 09:55 pipex.h
+-rw-rw-r-- 1 gmasfisch gmasfisch  2545 Dec 11 14:41 README.md
+-rw-rw-r-- 1 gmasfisch gmasfisch  1564 Aug  5 09:55 utils.c

@@ -206,4 +206,3 @@ You can download my resume here (upload your file after creating the repo):
 
 Thank you for visiting my portfolio!  
 I'm actively seeking Junior Developer positions and opportunities to grow as a software engineer.
-
