@@ -70,8 +70,6 @@ gcc main.c libft.a -o my_program
 # (create main.c that calls e.g. ft_strlen / ft_putstr_fd, then:)
 gcc main.c libft.a -o test_libft
 ./test_libft
-Bonus version
-(If you separate bonus into another target or file, build with make bonus or include the bonus sources in the Makefile.)
 ```
 
 ## Learning Outcomes
