@@ -80,7 +80,8 @@ gcc main.c libft.a -o test_libft
 - Building a small, reusable library used across other 42 projects (ft_printf, get_next_line, pipex)
 
 Author / Contact
-Gustavo Fischbach — 42 Berlin (Rank 04)
-GitHub Portfolio: Portfolio
-GitHub Profile: Profile
-Email: fischbachgustavo@gmail.com
+
+Gustavo Fischbach — 42 Berlin (rank 04)  
+**GitHub Portfolio:** [Portfolio](https://github.com/Gmasfisch/gustavo-portfolio)  
+**GitHub Profile:** [Profile](https://github.com/Gmasfisch)  
+**Email:** fischbachgustavo@gmail.com
