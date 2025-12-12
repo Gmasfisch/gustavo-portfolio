@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   pipex_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gfischba <gfischba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gmasfisch <gmasfisch@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 11:28:31 by gfischba          #+#    #+#             */
-/*   Updated: 2025/06/27 16:10:24 by gfischba         ###   ########.fr       */
+/*   Updated: 2025/12/12 09:33:17 by gmasfisch        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
+#include "pipex_bonus.h"
 
 void	here_doc_mode(t_pipex *pipex, char **argv, int argc)
 {
@@ -47,8 +48,8 @@ void	read_heredoc_input(int write_fd, const char *limiter)
 			perror("error reading from stdin");
 			exit(EXIT_FAILURE);
 		}
-		if (ft_strncmp(line, limiter, ft_strlen(limiter)) == 0 && 
-			line[ft_strlen(limiter)] == '\n')
+		if (ft_strncmp(line, limiter, ft_strlen(limiter)) == 0
+			&& line[ft_strlen(limiter)] == '\n')
 		{
 			free(line);
 			break ;

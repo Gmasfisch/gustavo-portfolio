@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gfischba <gfischba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gmasfisch <gmasfisch@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 11:43:05 by gfischba          #+#    #+#             */
-/*   Updated: 2025/06/27 16:10:56 by gfischba         ###   ########.fr       */
+/*   Updated: 2025/12/12 09:33:42 by gmasfisch        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char **argv, char **envp)
 	pipex = init_pipex(argc, argv, envp);
 	if (!pipex)
 		return (EXIT_FAILURE);
-	if (ft_strncmp(argv[1], "here_doc", 9) == 0)
+	if (ft_strncmp(argv[1], "here_doc", 8) == 0)
 		here_doc_mode(pipex, argv, argc);
 	else
 		normal_mode(pipex, argv, argc);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gfischba <gfischba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gmasfisch <gmasfisch@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/09 18:25:53 by gfischba          #+#    #+#             */
-/*   Updated: 2025/06/27 16:51:06 by gfischba         ###   ########.fr       */
+/*   Updated: 2025/12/12 09:47:19 by gmasfisch        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,14 @@ t_pipex	*init_pipex(int argc, char **argv, char **envp)
 
 void	normal_mode(t_pipex *pipex, char **argv, int argc)
 {
-	pipex->infile_fd = open(argv[1], O_RDONLY);
+	pipex->infile_fd = open(argv[1], O_RDONLY, O_CREAT);
 	if (pipex->infile_fd == -1)
 	{
 		perror("opening file failure");
 		exit(EXIT_FAILURE);
 	}
-	pipex->outfile_fd = open(argv[argc - 1], O_WRONLY | 
-			O_CREAT | O_TRUNC, 0644);
+	pipex->outfile_fd = open(argv[argc - 1], O_WRONLY
+			| O_CREAT | O_TRUNC, 0644);
 	if (pipex->outfile_fd == -1)
 	{
 		perror("opening file failure");
