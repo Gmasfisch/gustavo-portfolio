@@ -180,7 +180,7 @@ I am currently **rank 04**, having completed core system-level projects includin
 
 # 📄 Download CV
 
-You can download my resume here (upload your file after creating the repo):
+You can download my resume here :
 
 **➡️ [CV.pdf](./CV.pdf)**
 
