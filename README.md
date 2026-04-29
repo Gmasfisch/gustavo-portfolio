@@ -1,9 +1,9 @@
 # gustavo-portfolio
 Projects porfolio
 
-# 👋 Hi, I'm Gustavo — Junior Software Developer (C, Systems Programming)
+# 👋 Hi, I'm Gustavo — Software Developer (C, Systems Programming)
 
-I'm a Junior Developer based in Berlin, currently studying at **42 Berlin (rank 04)**.  
+I'm a Software Developer based in Berlin, currently studying at **42 Berlin (rank 05)**.  
 After working in physiotherapy and hospitality across Europe, I discovered my passion for programming and problem-solving, and committed fully to software development.
 
 I specialize in **C, system-level programming, Linux, concurrency, and core computer science fundamentals**.  
@@ -174,7 +174,7 @@ Bonus features: pipex
 42 is an international, peer-to-peer, project-based software engineering school with no teachers and no traditional classes.  
 Progress is entirely based on completing increasingly complex projects and reviewing the work of others.
 
-I am currently **rank 04**, having completed core system-level projects including Minishell and Philosophers.
+I am currently **rank 05**, having completed core system-level projects including Minishell and Philosophers.
 
 ---
 
@@ -188,11 +188,11 @@ You can download my resume here :
 
 # 🇩🇪 Kurzprofil (für deutsche Recruiter)
 
-- Junior Software Developer in Ausbildung bei **42 Berlin (rank 04)**  
+- Junior Software Developer in Ausbildung bei **42 Berlin (rank 05)**  
 - Schwerpunkt: **C, Linux, Systemprogrammierung, Concurrency, Speicherverwaltung**  
 - Erfahrung in internationalen und multikulturellen Teams  
 - Sprachen: **Spanisch (Muttersprache), Englisch (fließend), Deutsch (B1/B2)**  
-- Interesse an Backend, Systemprogrammierung, Embedded oder Low-Level Development  
+- Interesse an Backend, Systemprogrammierung, Embedded oder Low-Level Development, SAP ABAP.  
 
 ---
 
@@ -205,4 +205,4 @@ You can download my resume here :
 ---
 
 Thank you for visiting my portfolio!  
-I'm actively seeking Junior Developer positions and opportunities to grow as a software engineer.
+I'm actively seeking Software Developer positions and opportunities to grow as a software engineer.
