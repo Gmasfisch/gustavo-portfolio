@@ -1,32 +1,54 @@
 # gustavo-portfolio
+
 Projects porfolio
 
-# 👋 Hi, I'm Gustavo — Software Developer (C, Systems Programming)
+# 👋 Hi, I'm Gustavo — SAP ABAP Developer | C & Systems Programming
 
-I'm a Software Developer based in Berlin, currently studying at **42 Berlin (rank 05)**.  
-After working in physiotherapy and hospitality across Europe, I discovered my passion for programming and problem-solving, and committed fully to software development.
+I'm a developer based in Berlin, **SAP Certified as a Back-End Developer (ABAP Cloud)**
+and currently studying at **42 Berlin (rank 05)**.
 
-I specialize in **C, system-level programming, Linux, concurrency, and core computer science fundamentals**.  
-This portfolio highlights the projects that best demonstrate my ability to build reliable, low-level, well-structured software.
+After working in physiotherapy and hospitality across Europe, I discovered my passion for
+programming and problem-solving, and committed fully to software development.
+
+My focus is **SAP ABAP Cloud** — RAP business objects, CDS views, and clean-core extensions —
+built on a foundation of **C, system-level programming, Linux, and concurrency** from 42 Berlin.
+That combination means I came to ABAP already understanding memory, processes, and how
+software actually runs underneath the abstraction.
 
 ---
 
+### 🎓 Certification
+
+🎓 **[SAP Certified – Back-End Developer, ABAP Cloud](https://www.credly.com/badges/c8bb9647-35c5-4531-a472-e07d758b70d6/public_url)** · July 2026
+
 # 🧰 Tech Stack
 
+### **SAP / ABAP**
+
+- ABAP Cloud (SAP Certified)
+- RAP — RESTful Application Programming Model (behavior definitions, determinations, validations, EML)
+- CDS view entities, associations, and access control (DCL)
+- ABAP SQL — joins, subqueries, aggregates
+- Object-oriented ABAP, inheritance, exception classes (T100)
+- ABAP Dictionary — domains, data elements, structures, table types
+- Eclipse / ABAP Development Tools (ADT)
+
 ### **Languages**
+
 - **C (advanced)**
-- Bash / Shell scripting  
-- Basic Python  
-- Basic JavaScript  
+- Bash / Shell scripting
+- Basic Python
+- Basic JavaScript
 
 ### **Tools & Technologies**
-- Linux / POSIX  
-- Git & GitHub  
-- Makefile  
-- Threads & Mutexes (pthread)  
-- Process management (`fork`, `execve`, `dup2`)  
-- Valgrind / memory debugging  
-- Parsing, I/O, and file descriptors  
+
+- Linux / POSIX
+- Git & GitHub
+- Makefile
+- Threads & Mutexes (pthread)
+- Process management (`fork`, `execve`, `dup2`)
+- Valgrind / memory debugging
+- Parsing, I/O, and file descriptors
 
 ---
 
@@ -38,15 +60,17 @@ Full list available on my GitHub profile.
 ---
 
 ## 🔹 **Minishell**
+
 **C, Linux, POSIX APIs, System Programming**
 
 A fully working Bash-like shell supporting command execution, pipes, redirections, environment variables, and built-in commands.
 
 **What I built:**
-- `fork`, `execve`, pipes, redirections (`<`, `>`, `>>`)  
-- Built-ins: `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`  
-- Signal handling (`SIGINT`, `SIGQUIT`)  
-- Tokenizer + minimal parser with quote handling  
+
+- `fork`, `execve`, pipes, redirections (`<`, `>`, `>>`)
+- Built-ins: `cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`
+- Signal handling (`SIGINT`, `SIGQUIT`)
+- Tokenizer + minimal parser with quote handling
 - Robust memory management
 
 Bonus features: minishell
@@ -57,20 +81,22 @@ Bonus features: minishell
 
 - Extended parsing logic for operator precedence and grouped execution contexts.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/minishell  
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/minishell
 
 ---
 
 ## 🔹 **Philosophers**
+
 **C, Threads, Concurrency, Synchronization**
 
 A multithreaded simulation of the Dining Philosophers problem, focusing on preventing deadlocks and race conditions.
 
 **What I built:**
-- Concurrency model using pthreads  
-- Mutex synchronization  
-- Deadlock avoidance via fork ordering  
-- Monitor thread for death detection  
+
+- Concurrency model using pthreads
+- Mutex synchronization
+- Deadlock avoidance via fork ordering
+- Monitor thread for death detection
 - Precise timing and safe logging
 
 Bonus features (Process-Based Version): philosophers
@@ -91,33 +117,37 @@ Implemented a version where each philosopher runs in its own process, not a thre
 
 - Ensured correct cleanup of semaphores and orphaned processes to avoid resource leaks.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/philosophers  
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/philosophers
 
 ---
 
 ## 🔹 **libft**
+
 **Custom C standard library**
 
 A complete C library implementing many standard functions for strings, memory, linked lists, and more.
 
 **What I built:**
-- Memory manipulation (ft_memcpy, ft_memset…)  
-- String functions (ft_split, ft_strjoin…)  
-- Linked list utilities  
-- Clean APIs and consistent error handling  
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/libft  
+- Memory manipulation (ft_memcpy, ft_memset…)
+- String functions (ft_split, ft_strjoin…)
+- Linked list utilities
+- Clean APIs and consistent error handling
+
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/libft
 
 ---
 
 ## 🔹 **get_next_line**
+
 **File I/O, buffers, memory management**
 
 A line-by-line file reader using static buffers and efficient memory control.
 
 **What I built:**
-- Reading from file descriptors  
-- Static internal state per descriptor  
+
+- Reading from file descriptors
+- Static internal state per descriptor
 - Dynamic memory and buffer management
 
 Bonus features: get_next_line
@@ -128,33 +158,37 @@ Bonus features: get_next_line
 
 - Fully memory-safe: dynamic allocation, cleanup, and buffer rollover handled carefully.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/get_next_line  
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/get_next_line
 
 ---
 
 ## 🔹 **ft_printf**
+
 **Variadic functions, parsing, formatted output**
 
 A full re-implementation of `printf`, supporting conversion specifiers, flags, and formatted output.
 
 **What I built:**
-- Variadic argument parsing  
-- Conversion handling  
-- Modular formatting components  
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/ft_printf  
+- Variadic argument parsing
+- Conversion handling
+- Modular formatting components
+
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/ft_printf
 
 ---
 
 ## 🔹 **pipex**
+
 **Pipes, process execution, file descriptors**
 
 A simplified version of shell pipelines.
 
 **What I built:**
-- Process creation using `fork`  
-- Piping between commands  
-- Infile/outfile redirection  
+
+- Process creation using `fork`
+- Piping between commands
+- Infile/outfile redirection
 - Error handling for failed commands
 
 Bonus features: pipex
@@ -165,7 +199,7 @@ Bonus features: pipex
 
 - Robust error propagation and cleanup when pipelines fail partway.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/pipex  
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/pipex
 
 ---
 
@@ -189,19 +223,19 @@ You can download my resume here :
 
 # 🇩🇪 Kurzprofil (für deutsche Recruiter)
 
-- Junior Software Developer in Ausbildung bei **42 Berlin (rank 05)**  
-- Schwerpunkt: **C, Linux, Systemprogrammierung, Concurrency, Speicherverwaltung**  
-- Erfahrung in internationalen und multikulturellen Teams  
-- Sprachen: **Spanisch (Muttersprache), Englisch (fließend), Deutsch (B1/B2)**  
-- Interesse an Backend, Systemprogrammierung, Embedded oder Low-Level Development, SAP ABAP.  
+- Junior Software Developer in Ausbildung bei **42 Berlin (rank 05)**
+- Schwerpunkt: **C, Linux, Systemprogrammierung, Concurrency, Speicherverwaltung**
+- Erfahrung in internationalen und multikulturellen Teams
+- Sprachen: **Spanisch (Muttersprache), Englisch (fließend), Deutsch (B1/B2)**
+- Interesse an Backend, Systemprogrammierung, Embedded oder Low-Level Development, SAP ABAP.
 
 ---
 
 # 📬 Contact
 
-- GitHub: https://github.com/Gmasfisch  
-- Email: fischbachgustavo@gmail.com  
-- Location: Berlin, Germany  
+- GitHub: https://github.com/Gmasfisch
+- Email: fischbachgustavo@gmail.com
+- Location: Berlin, Germany
 
 ---
 
