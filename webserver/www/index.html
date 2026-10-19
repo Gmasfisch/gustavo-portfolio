@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>webserv</title>
+  </head>
+  <body>
+    <h1>webserv</h1>
+    <p>HTTP Server in C++98 - 42 Berlin</p>
+
+    <h2>Files and configuration</h2>
+    <ul>
+      <li><a href="/images/">Directory listing</a> (autoindex on)</li>
+      <li><a href="/old">Redirection</a> (301, brings you back)</li>
+      <li><a href="/doesntexists.html">Error 404</a> (personalized page)</li>
+      <li>
+        <a href="/cgi-bin/">Directory without index or autoindex</a> (403)
+      </li>
+      <li>
+        <a id="second" href="#">Second server</a> (port 9090, another root)
+      </li>
+    </ul>
+
+    <h2>Upload y DELETE</h2>
+    <ul>
+      <li><a href="/upload.html">Upload a part</a> (POST multipart)</li>
+      <li><a href="/uploads/">See uploaded files</a></li>
+    </ul>
+    <p>
+      Delete an uploaded file (DELETE):
+      <input type="text" id="delname" placeholder="name.txt" />
+      <button onclick="del()">Delete</button>
+      <span id="delresult"></span>
+    </p>
+
+    <h2>CGI</h2>
+    <ul>
+      <li>
+        <a href="/cgi-bin/hello.py?name=gustavo">hello.py</a> (Python, GET con
+        query string)
+      </li>
+      <li>
+        <a href="/cgi-bin/salute.sh">salute.sh</a> (Bash, second language)
+      </li>
+      <li>
+        <a href="/cgi-bin/noexiste.py">Script that doesnt exists</a> (404)
+      </li>
+      <li>
+        <a href="/cgi-bin/sleep.sh">sleep.sh</a> (it hangs 20 s: at 15 s
+        responds 504)
+      </li>
+    </ul>
+    <form method="POST" action="/cgi-bin/echo.py">
+      POST to echo.py (body reaches the script by stdin):
+      <input type="text" name="name" value="gustavo" />
+      <input type="submit" value="Send" />
+    </form>
+
+    <script>
+      document.getElementById("second").href =
+        "http://" + window.location.hostname + ":9090/";
+
+      function borrar() {
+        var name = document.getElementById("delname").value;
+        var out = document.getElementById("delresult");
+        if (!name) {
+          out.textContent = "write a name";
+          return;
+        }
+        fetch("/uploads/" + encodeURIComponent(name), { method: "DELETE" })
+          .then(function (r) {
+            out.textContent = r.status + " " + r.statusText;
+          })
+          .catch(function () {
+            out.textContent = "network error";
+          });
+      }
+    </script>
+  </body>
+</html>

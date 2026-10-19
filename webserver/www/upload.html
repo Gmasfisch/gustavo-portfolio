@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Subir archivo</title>
+  </head>
+  <body>
+    <h1>Subir un archivo</h1>
+
+    <form
+      method="POST"
+      action="/uploads/subido.txt"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="file" />
+      <input type="submit" value="Subir" />
+    </form>
+
+    <p><a href="/">Volver</a></p>
+  </body>
+</html>
