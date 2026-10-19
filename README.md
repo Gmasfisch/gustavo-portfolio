@@ -1,25 +1,27 @@
 # gustavo-portfolio
 
-Projects porfolio
+Projects portfolio
 
 # 👋 Hi, I'm Gustavo — SAP ABAP Developer | C & Systems Programming
 
-I'm a developer based in Berlin, **SAP Certified as a Back-End Developer (ABAP Cloud)**
-and currently studying at **42 Berlin (rank 05)**.
+I'm a developer based in Berlin, **SAP Certified as a Back-End Developer (ABAP Cloud)** and
+**Integration Developer**, currently studying at **42 Berlin (rank 06)**.
 
 After working in physiotherapy and hospitality across Europe, I discovered my passion for
 programming and problem-solving, and committed fully to software development.
 
 My focus is **SAP ABAP Cloud** — RAP business objects, CDS views, and clean-core extensions —
-built on a foundation of **C, system-level programming, Linux, and concurrency** from 42 Berlin.
+built on a foundation of **C, C++, system-level programming, Linux, and concurrency** from 42 Berlin.
 That combination means I came to ABAP already understanding memory, processes, and how
 software actually runs underneath the abstraction.
 
 ---
 
-### 🎓 Certification
+### 🎓 Certifications
 
 🎓 **[SAP Certified – Back-End Developer, ABAP Cloud](https://www.credly.com/badges/c8bb9647-35c5-4531-a472-e07d758b70d6/public_url)** · July 2026
+
+🎓 **SAP Certified – Integration Developer** · September 2026
 
 # 🧰 Tech Stack
 
@@ -32,10 +34,12 @@ software actually runs underneath the abstraction.
 - Object-oriented ABAP, inheritance, exception classes (T100)
 - ABAP Dictionary — domains, data elements, structures, table types
 - Eclipse / ABAP Development Tools (ADT)
+- SAP Integration Suite (SAP Certified Integration Developer)
 
 ### **Languages**
 
 - **C (advanced)**
+- **C++ (C++98)**
 - Bash / Shell scripting
 - Basic Python
 - Basic JavaScript
@@ -45,6 +49,9 @@ software actually runs underneath the abstraction.
 - Linux / POSIX
 - Git & GitHub
 - Makefile
+- Docker & Docker Compose
+- NGINX, MariaDB, WordPress (wp-cli), TLS/SSL (OpenSSL)
+- Network programming — sockets, non-blocking I/O, `poll()`, HTTP/1.1, CGI
 - Threads & Mutexes (pthread)
 - Process management (`fork`, `execve`, `dup2`)
 - Valgrind / memory debugging
@@ -56,6 +63,62 @@ software actually runs underneath the abstraction.
 
 Below is a curated selection of my most relevant projects.  
 Full list available on my GitHub profile.
+
+---
+
+## 🔹 **Webserver**
+
+**C++98, Network Programming, HTTP/1.1, CGI** · *Team project (2 people)*
+
+An HTTP/1.1 web server written in C++98 with no external libraries, driven by a single non-blocking `poll()` event loop. Configurable through an NGINX-style configuration file.
+
+**What I built (my part):**
+
+- The core event loop: listening sockets, `accept`, and per-client connections, all non-blocking and handled through one `poll()`
+- Connection state and read/write buffers, including partial sends (`POLLOUT`) so large responses never block the server
+- HTTP request parsing: request line, headers, query string, `Content-Length` and chunked bodies
+- Response generation: static files, status codes, custom error pages, redirections, autoindex
+- Timeouts for idle clients and clean shutdown on `SIGINT` / `SIGTERM`
+
+**What my teammate built:**
+
+- The configuration file parser (tokenizer, `server` / `location` blocks, directives)
+- The CGI implementation (`fork` / `execve`, environment variables, pipes)
+
+**Built together:** wiring the CGI pipes into the same `poll()` loop, so a slow script never blocks other clients.
+
+**Features:**
+
+- Multiple servers and ports, with longest-prefix `location` matching
+- `GET`, `POST` and `DELETE`
+- File upload (`multipart/form-data`) and per-location `client_max_body_size` (`413` when exceeded)
+- Configurable error pages and HTTP redirections
+- CGI with configurable interpreters per extension (`cgi_ext`); tested with Python and shell scripts
+- CGI timeout (`504`) with the child process killed and reaped
+- Stress-tested with `siege` (25 concurrent clients, 100% availability) and with the 42 tester (20 workers, each sending 5 requests of 100 MB); also checked for leaks and file descriptor inheritance
+
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/webserver
+
+---
+
+## 🔹 **Inception**
+
+**Docker, Docker Compose, NGINX, WordPress, MariaDB, System Administration**
+
+A small web infrastructure built entirely with Docker inside a Debian virtual machine, using only self-written images (mandatory part).
+
+**What I built:**
+
+- Three containers, each from its own Dockerfile on Debian `bookworm`: **NGINX**, **WordPress + php-fpm**, **MariaDB**
+- NGINX as the single entrypoint: port 443 only, TLSv1.2 / TLSv1.3 with a self-signed certificate, PHP forwarded to WordPress over FastCGI
+- Automatic WordPress installation with `wp-cli` at container startup, and database/user creation for MariaDB
+- Idempotent entrypoint scripts (guards on persistent data), with the service running in the foreground as PID 1
+- Credentials handled with **Docker secrets** (`/run/secrets`) and `.env` for non-sensitive settings, none of them committed
+- A dedicated bridge network (only port 443 exposed) and two named volumes persisted on the host
+- Everything driven by a `Makefile` (`make`, `down`, `clean`, `fclean`, `re`)
+- Written user and developer documentation (`USER_DOC.md`, `DEV_DOC.md`)
+
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/inception
 
 ---
 
@@ -208,7 +271,7 @@ Bonus features: pipex
 42 is an international, peer-to-peer, project-based software engineering school with no teachers and no traditional classes.  
 Progress is entirely based on completing increasingly complex projects and reviewing the work of others.
 
-I am currently **rank 05**, having completed core system-level projects including Minishell and Philosophers.
+I am currently **rank 06**, having completed core system-level projects including Minishell, Philosophers, Webserver and Inception.
 
 ---
 
@@ -223,10 +286,10 @@ You can download my resume here :
 
 # 🇩🇪 Kurzprofil (für deutsche Recruiter)
 
-- Junior Software Developer in Ausbildung bei **42 Berlin (rank 05)**
-- Schwerpunkt: **C, Linux, Systemprogrammierung, Concurrency, Speicherverwaltung**
+- Junior Software Developer in Ausbildung bei **42 Berlin (rank 06)**
+- Schwerpunkt: **C, C++, Linux, Systemprogrammierung, Netzwerkprogrammierung, Concurrency, Speicherverwaltung**
 - Erfahrung in internationalen und multikulturellen Teams
-- Sprachen: **Spanisch (Muttersprache), Englisch (fließend), Deutsch (B1/B2)**
+- Sprachen: **Spanisch (Muttersprache), Englisch (fließend), Deutsch (B2)**
 - Interesse an Backend, Systemprogrammierung, Embedded oder Low-Level Development, SAP ABAP.
 
 ---
