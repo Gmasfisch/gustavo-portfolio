@@ -21,7 +21,7 @@ software actually runs underneath the abstraction.
 
 🎓 **[SAP Certified – Back-End Developer, ABAP Cloud](https://www.credly.com/badges/c8bb9647-35c5-4531-a472-e07d758b70d6/public_url)** · July 2026
 
-🎓 **SAP Certified – Integration Developer** · September 2026
+🎓 **[SAP Certified – Integration Developer](https://www.credly.com/badges/389552d5-50f8-4a5f-8a84-1c5557e0f190/public_url)** · September 2026
 
 # 🧰 Tech Stack
 
