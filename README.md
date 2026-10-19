@@ -97,7 +97,7 @@ An HTTP/1.1 web server written in C++98 with no external libraries, driven by a 
 - CGI timeout (`504`) with the child process killed and reaped
 - Stress-tested with `siege` (25 concurrent clients, 100% availability) and with the 42 tester (20 workers, each sending 5 requests of 100 MB); also checked for leaks and file descriptor inheritance
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/webserver
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/webserver
 
 ---
 
@@ -118,7 +118,7 @@ A small web infrastructure built entirely with Docker inside a Debian virtual ma
 - Everything driven by a `Makefile` (`make`, `down`, `clean`, `fclean`, `re`)
 - Written user and developer documentation (`USER_DOC.md`, `DEV_DOC.md`)
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/inception
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/inception
 
 ---
 
@@ -144,7 +144,7 @@ Bonus features: minishell
 
 - Extended parsing logic for operator precedence and grouped execution contexts.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/minishell
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/minishell
 
 ---
 
@@ -180,7 +180,7 @@ Implemented a version where each philosopher runs in its own process, not a thre
 
 - Ensured correct cleanup of semaphores and orphaned processes to avoid resource leaks.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/philosophers
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/philosophers
 
 ---
 
@@ -197,7 +197,7 @@ A complete C library implementing many standard functions for strings, memory, l
 - Linked list utilities
 - Clean APIs and consistent error handling
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/libft
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/libft
 
 ---
 
@@ -221,7 +221,7 @@ Bonus features: get_next_line
 
 - Fully memory-safe: dynamic allocation, cleanup, and buffer rollover handled carefully.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/get_next_line
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/get_next_line
 
 ---
 
@@ -237,7 +237,7 @@ A full re-implementation of `printf`, supporting conversion specifiers, flags, a
 - Conversion handling
 - Modular formatting components
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/ft_printf
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/ft_printf
 
 ---
 
@@ -262,7 +262,7 @@ Bonus features: pipex
 
 - Robust error propagation and cleanup when pipelines fail partway.
 
-**Link:** https://github.com/Gmasfisch/gustavo-portfolio/pipex
+**Link:** https://github.com/Gmasfisch/gustavo-portfolio/tree/main/pipex
 
 ---
 
