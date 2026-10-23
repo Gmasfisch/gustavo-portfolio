@@ -280,7 +280,7 @@ I am currently **rank 06**, having completed core system-level projects includin
 You can download my resume here :
 
 **➡️ [CV (English)](docs/Gustavo_Fischbach_CV_EN.pdf)**  
-**➡️ [CV (Deutsch)](docs/Gustavo_Fischbach_CV_DE.pdf)**
+**➡️ [CV (Deutsch)](docs/Gustavo_Fischbach_CV_DE.pdf)**  
 **➡️ [CV (Español)](docs/Gustavo_Fischbach_CV_ES.pdf)**
 
 ---
